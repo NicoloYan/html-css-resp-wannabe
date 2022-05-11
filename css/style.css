@@ -141,7 +141,8 @@ img {
 
 @media all and (max-width: 480px) {
     .container {
-        width: 100%
+        width: 100%;
+        padding-top: 100px
     }
     .row {
         flex-direction: column;
@@ -163,6 +164,13 @@ img {
     }
     .col .card {
         margin-bottom: 100px;    
+    }
+    .why-us {
+        background-color: #222222;
+        margin-bottom: 0;
+    }
+    .steps {
+        margin-bottom: 0;
     }
 
 }

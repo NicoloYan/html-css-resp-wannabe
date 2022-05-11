@@ -129,10 +129,40 @@ img {
  ************************************************/
 
 
-/* Tablet 481px-768px */
+/* Tablet = 481px-768px */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
     .container {
         width: 100%;
     }
+}
+
+/* Mobile ≤ 480px */
+
+@media all and (max-width: 480px) {
+    .container {
+        width: 100%
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+        width: inherit;
+    }
+    .lessons .col {
+        width: 100%;
+    }
+    .steps .col {
+        width: 100%;
+    }
+    .why-us .col-right {
+        width: 100%;
+    }
+    .why-us .col-left {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .col .card {
+        margin-bottom: 100px;    
+    }
+
 }
